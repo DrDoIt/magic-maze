@@ -1,0 +1,55 @@
+[gd_scene load_steps=4 format=3 uid="uid://88156e6ujoli"]
+
+[ext_resource type="PackedScene" uid="uid://den1wpxq72227" path="res://maze_1.tscn" id="1_h715c"]
+[ext_resource type="PackedScene" uid="uid://dkgccj1vlq0l" path="res://player.tscn" id="2_513s2"]
+[ext_resource type="PackedScene" uid="uid://b7eoin8mehrva" path="res://apple.tscn" id="3_80rae"]
+
+[node name="Main" type="Node"]
+
+[node name="Map" type="Node" parent="."]
+
+[node name="Maze1" parent="Map" instance=ExtResource("1_h715c")]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Map"]
+collision_layer = 2
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Map/StaticBody2D"]
+polygon = PackedVector2Array(1308, 758, 1309, 803, 1380, 803, 1380, 605, 1310, 604, 1309, 732, 1299, 732, 1299, 685, 1199, 685, 1199, 674, 1298, 674, 1298, 595, 1377, 594, 1389, 594, 1389, 813, 1298, 813, 1299, 755, 1309, 755)
+
+[node name="StaticBody2D2" type="StaticBody2D" parent="Map"]
+collision_layer = 2
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Map/StaticBody2D2"]
+position = Vector2(-92, 153)
+polygon = PackedVector2Array(1469, 694, 1359, 691, 1357, 565, 1293, 565, 1293, 552, 1368, 554, 1370, 680, 1481, 681, 1481, 902, 1471, 903)
+
+[node name="StaticBody2D3" type="StaticBody2D" parent="Map"]
+collision_layer = 2
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Map/StaticBody2D3"]
+polygon = PackedVector2Array(1411, 1055, 1411, 835, 1563, 835, 1562, 927, 1557, 927, 1557, 845, 1422, 845, 1421, 1056)
+
+[node name="StaticBody2D4" type="StaticBody2D" parent="Map"]
+collision_layer = 2
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Map/StaticBody2D4"]
+polygon = PackedVector2Array(1410, 608, 1411, 813, 1565, 813, 1563, 655, 1616, 656, 1619, 669, 1727, 670, 1728, 658, 1627, 655, 1627, 639, 1556, 639, 1556, 802, 1422, 802, 1422, 608)
+
+[node name="StaticBody2D5" type="StaticBody2D" parent="Map"]
+collision_layer = 2
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Map/StaticBody2D5"]
+position = Vector2(309, 85)
+polygon = PackedVector2Array(1418, 605, 1313, 605, 1312, 839, 1321, 834, 1321, 618, 1418, 617)
+
+[node name="Marker2D" type="Marker2D" parent="."]
+position = Vector2(1400, 824)
+
+[node name="Player" parent="." instance=ExtResource("2_513s2")]
+position = Vector2(1399, 824)
+collision_mask = 2
+
+[node name="Collectibles" type="Node" parent="."]
+
+[node name="Apple" parent="Collectibles" instance=ExtResource("3_80rae")]
+position = Vector2(1344, 681)
