@@ -1,12 +1,12 @@
 [gd_scene load_steps=16 format=4 uid="uid://den1wpxq72227"]
 
-[ext_resource type="Texture2D" uid="uid://bgtp5br8qh2ti" path="res://Grass.png" id="1_ofrla"]
-[ext_resource type="Texture2D" uid="uid://vq5xp603d7sk" path="res://Hills.png" id="2_uds6g"]
-[ext_resource type="Texture2D" uid="uid://52bdaydohki1" path="res://Tilled_Dirt_v2.png" id="3_aec5q"]
-[ext_resource type="Texture2D" uid="uid://fpphe1bjsalr" path="res://Tilled_Dirt.png" id="4_lejlo"]
-[ext_resource type="Texture2D" uid="uid://c4cue8c7afk2e" path="res://Water.png" id="5_0hj57"]
-[ext_resource type="Texture2D" uid="uid://4hhnqa5ltsw5" path="res://Doors.png" id="6_ey25a"]
-[ext_resource type="Texture2D" uid="uid://c507k4mar7wls" path="res://Fences.png" id="7_82rbt"]
+[ext_resource type="Texture2D" uid="uid://bgtp5br8qh2ti" path="res://Art/Grass.png" id="1_ofrla"]
+[ext_resource type="Texture2D" uid="uid://vq5xp603d7sk" path="res://Art/Hills.png" id="2_uds6g"]
+[ext_resource type="Texture2D" uid="uid://52bdaydohki1" path="res://Art/Tilled_Dirt_v2.png" id="3_aec5q"]
+[ext_resource type="Texture2D" uid="uid://fpphe1bjsalr" path="res://Art/Tilled_Dirt.png" id="4_lejlo"]
+[ext_resource type="Texture2D" uid="uid://c4cue8c7afk2e" path="res://Art/Water.png" id="5_0hj57"]
+[ext_resource type="Texture2D" uid="uid://4hhnqa5ltsw5" path="res://Art/Doors.png" id="6_ey25a"]
+[ext_resource type="Texture2D" uid="uid://c507k4mar7wls" path="res://Art/Fences.png" id="7_82rbt"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_8fpg6"]
 texture = ExtResource("1_ofrla")

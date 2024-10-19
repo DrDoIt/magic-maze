@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://et3fit3qfifm"
-path="res://.godot/imported/Bitmask references 2.png-0712ce1cbfbcae66983074e30ab4564d.ctex"
+uid="uid://c15ypsu0npswi"
+path="res://.godot/imported/Wooden_House_Walls_Tilset.png-35dff6c9e58dfcfbe16954cb32034898.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Bitmask references 2.png"
-dest_files=["res://.godot/imported/Bitmask references 2.png-0712ce1cbfbcae66983074e30ab4564d.ctex"]
+source_file="res://Art/Wooden_House_Walls_Tilset.png"
+dest_files=["res://.godot/imported/Wooden_House_Walls_Tilset.png-35dff6c9e58dfcfbe16954cb32034898.ctex"]
 
 [params]
 

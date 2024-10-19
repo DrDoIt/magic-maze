@@ -2,7 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://den1wpxq72227" path="res://maze_1.tscn" id="1_h715c"]
 [ext_resource type="PackedScene" uid="uid://dkgccj1vlq0l" path="res://player.tscn" id="2_513s2"]
-[ext_resource type="PackedScene" uid="uid://b7eoin8mehrva" path="res://apple.tscn" id="3_80rae"]
+[ext_resource type="PackedScene" uid="uid://b7eoin8mehrva" path="res://Art/apple.tscn" id="3_80rae"]
 
 [node name="Main" type="Node"]
 

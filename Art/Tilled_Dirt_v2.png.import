@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cm1kn8qp0pqb0"
-path="res://.godot/imported/Bitmask references 1.png-b286869ef05598d53da8d6f2d3295b62.ctex"
+uid="uid://52bdaydohki1"
+path="res://.godot/imported/Tilled_Dirt_v2.png-0b4e395ac035e344ed7482189cca41bc.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Bitmask references 1.png"
-dest_files=["res://.godot/imported/Bitmask references 1.png-b286869ef05598d53da8d6f2d3295b62.ctex"]
+source_file="res://Art/Tilled_Dirt_v2.png"
+dest_files=["res://.godot/imported/Tilled_Dirt_v2.png-0b4e395ac035e344ed7482189cca41bc.ctex"]
 
 [params]
 

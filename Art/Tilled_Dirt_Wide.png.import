@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d1gwg218dj8kv"
-path="res://.godot/imported/Wooden_House_Roof_Tilset.png-fea9b5eedda013e3962cdb3a1aa83a17.ctex"
+uid="uid://difl8hrn1uplh"
+path="res://.godot/imported/Tilled_Dirt_Wide.png-5901610ecbfc4ee2b38801cd2c62378d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Wooden_House_Roof_Tilset.png"
-dest_files=["res://.godot/imported/Wooden_House_Roof_Tilset.png-fea9b5eedda013e3962cdb3a1aa83a17.ctex"]
+source_file="res://Art/Tilled_Dirt_Wide.png"
+dest_files=["res://.godot/imported/Tilled_Dirt_Wide.png-5901610ecbfc4ee2b38801cd2c62378d.ctex"]
 
 [params]
 

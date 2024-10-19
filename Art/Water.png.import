@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://difl8hrn1uplh"
-path="res://.godot/imported/Tilled_Dirt_Wide.png-ce9423386e56c6292d4c482697fc80e7.ctex"
+uid="uid://c4cue8c7afk2e"
+path="res://.godot/imported/Water.png-ccc605df2696771fdc6098b87a5fd6c3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Tilled_Dirt_Wide.png"
-dest_files=["res://.godot/imported/Tilled_Dirt_Wide.png-ce9423386e56c6292d4c482697fc80e7.ctex"]
+source_file="res://Art/Water.png"
+dest_files=["res://.godot/imported/Water.png-ccc605df2696771fdc6098b87a5fd6c3.ctex"]
 
 [params]
 

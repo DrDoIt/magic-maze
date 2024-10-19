@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c507k4mar7wls"
-path="res://.godot/imported/Fences.png-7c68286ee04759af536fa37f48bd6a0e.ctex"
+uid="uid://fpphe1bjsalr"
+path="res://.godot/imported/Tilled_Dirt.png-d57d42ebbac06374e77cec1964146c75.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Fences.png"
-dest_files=["res://.godot/imported/Fences.png-7c68286ee04759af536fa37f48bd6a0e.ctex"]
+source_file="res://Art/Tilled_Dirt.png"
+dest_files=["res://.godot/imported/Tilled_Dirt.png-d57d42ebbac06374e77cec1964146c75.ctex"]
 
 [params]
 
