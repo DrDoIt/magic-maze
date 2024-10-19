@@ -1,0 +1,18 @@
+[gd_scene load_steps=2 format=3 uid="uid://da81khfb2brih"]
+
+[ext_resource type="Script" path="res://hud.gd" id="1_qy8uy"]
+
+[node name="HUD" type="Node2D"]
+script = ExtResource("1_qy8uy")
+metadata/_edit_group_ = true
+
+[node name="Inventory" type="GridContainer" parent="."]
+offset_right = 78.0
+offset_bottom = 23.0
+columns = 2
+
+[node name="Label" type="Label" parent="Inventory"]
+texture_filter = 3
+layout_mode = 2
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+uppercase = true

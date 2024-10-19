@@ -1,0 +1,53 @@
+[gd_scene load_steps=7 format=3 uid="uid://dkm8kt7md8mrg"]
+
+[ext_resource type="Script" path="res://Items/pear.gd" id="1_c8q8t"]
+[ext_resource type="Texture2D" uid="uid://d1tve2cqmyj8w" path="res://Art/Pear.png" id="2_st2nq"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7unod"]
+atlas = ExtResource("2_st2nq")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_yujkv"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7unod")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_bqtp8"]
+radius = 9.0
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_ld6hf"]
+
+[node name="Pear" type="Node2D" groups=["Collectible"]]
+script = ExtResource("1_c8q8t")
+metadata/_edit_group_ = true
+
+[node name="RigidBody2D" type="RigidBody2D" parent="."]
+collision_layer = 4
+collision_mask = 7
+gravity_scale = 0.0
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="RigidBody2D"]
+texture_filter = 3
+position = Vector2(0, -1)
+sprite_frames = SubResource("SpriteFrames_yujkv")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RigidBody2D"]
+shape = SubResource("CircleShape2D_bqtp8")
+
+[node name="Area2D" type="Area2D" parent="RigidBody2D"]
+position = Vector2(20, 13)
+collision_layer = 4
+collision_mask = 7
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RigidBody2D/Area2D"]
+position = Vector2(-20, -13)
+shape = SubResource("CircleShape2D_ld6hf")
+
+[connection signal="body_entered" from="RigidBody2D" to="." method="_on_rigid_body_2d_body_entered"]
+[connection signal="body_entered" from="RigidBody2D/Area2D" to="." method="_on_area_2d_body_entered"]
