@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="Collectable" load_steps=3 format=3 uid="uid://36nu5anfjp75"]
+
+[ext_resource type="Script" path="res://collectible_resource.gd" id="1_sisoa"]
+[ext_resource type="Texture2D" uid="uid://curdfkrr7jw8n" path="res://Art/apple.png" id="2_7ot0u"]
+
+[resource]
+script = ExtResource("1_sisoa")
+sprite = ExtResource("2_7ot0u")
+value = 0
+type = 0

@@ -1,12 +1,15 @@
-[gd_scene load_steps=6 format=3 uid="uid://88156e6ujoli"]
+[gd_scene load_steps=8 format=3 uid="uid://88156e6ujoli"]
 
 [ext_resource type="PackedScene" uid="uid://den1wpxq72227" path="res://maze_1.tscn" id="1_h715c"]
+[ext_resource type="Script" path="res://main.gd" id="1_w64k0"]
 [ext_resource type="PackedScene" uid="uid://dkgccj1vlq0l" path="res://player.tscn" id="2_513s2"]
-[ext_resource type="PackedScene" uid="uid://b7eoin8mehrva" path="res://Items/apple.tscn" id="3_80rae"]
-[ext_resource type="PackedScene" uid="uid://dkm8kt7md8mrg" path="res://Items/pear.tscn" id="4_d1mkw"]
+[ext_resource type="PackedScene" uid="uid://bxq0vkbdk05tt" path="res://Items/collectible.tscn" id="4_wpq2a"]
 [ext_resource type="PackedScene" uid="uid://da81khfb2brih" path="res://hud.tscn" id="5_72aqe"]
+[ext_resource type="Resource" uid="uid://36nu5anfjp75" path="res://Resources/apple.tres" id="5_ow2hw"]
+[ext_resource type="PackedScene" uid="uid://b5fj4f18xpb1q" path="res://Items/chest.tscn" id="6_171mb"]
 
 [node name="Main" type="Node"]
+script = ExtResource("1_w64k0")
 
 [node name="Map" type="Node" parent="."]
 
@@ -44,6 +47,9 @@ collision_layer = 2
 position = Vector2(309, 85)
 polygon = PackedVector2Array(1418, 605, 1313, 605, 1312, 839, 1321, 834, 1321, 618, 1418, 617)
 
+[node name="Chest" parent="." instance=ExtResource("6_171mb")]
+position = Vector2(1322, 609)
+
 [node name="Marker2D" type="Marker2D" parent="."]
 position = Vector2(1400, 824)
 
@@ -51,20 +57,12 @@ position = Vector2(1400, 824)
 position = Vector2(1399, 824)
 collision_mask = 2
 
-[node name="Collectibles" type="Node" parent="."]
-
-[node name="Apple" parent="Collectibles" instance=ExtResource("3_80rae")]
-position = Vector2(1344, 681)
-
-[node name="Apple2" parent="Collectibles" instance=ExtResource("3_80rae")]
-position = Vector2(1351, 781)
-
-[node name="Apple3" parent="Collectibles" instance=ExtResource("3_80rae")]
-position = Vector2(1343, 630)
-
-[node name="Pear" parent="Collectibles" instance=ExtResource("4_d1mkw")]
-position = Vector2(1354, 735)
-
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="HUD" parent="CanvasLayer" instance=ExtResource("5_72aqe")]
+
+[node name="Collectible" parent="." instance=ExtResource("4_wpq2a")]
+position = Vector2(1324, 739)
+resource = ExtResource("5_ow2hw")
+
+[connection signal="eject" from="Chest" to="." method="_on_chest_eject"]
